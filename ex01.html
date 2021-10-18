@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        //내용을 실행해 주세요
+        console.log('111');
+    });
+    $().ready(function() {
+        console.log('222');
+    });
+    $(function() {
+        console.log('333');
+        $("button").click(function() {
+            //$("p").hide();
+        });
+        $("#show").click(function() {
+            $("p").show();
+        });
+    });
+    function my_show() {
+        console.log('aaa');
+        $("p").hide();
+    }
+</script>
+    <p>안녕하세요</p>
+    <button onclick="my_show();">클릭</button>
+    <button id="show">보임</button>
+</body>
+</html>

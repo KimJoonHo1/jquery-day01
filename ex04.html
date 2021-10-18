@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .css_pic {
+            height: 430px;
+        }
+        .css_pic img {
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+<script src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $("button.b1").click(function() {
+            //$("img").css({width: '100px', height: '100px'});
+            //$("img").css({width: '100px'});
+            $("img").animate({width: '100px'});
+        });
+        $("button.b2").click(function() {
+            $("img").css({width: '200px'});
+        });
+        $("button.b3").click(function() {
+            $("img").css({width: '300px'});
+        });
+
+    })
+</script>
+    <div class="css_pic">
+        <button class="b1">100픽셀</button>
+        <button class="b2">200픽셀</button>
+        <button class="b3">300픽셀</button>
+        <img name="pic1" src="resources/images/car01.png">
+    </div>
+</body>
+</html>
